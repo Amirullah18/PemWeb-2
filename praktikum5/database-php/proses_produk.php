@@ -4,21 +4,20 @@ require_once 'dbkoneksi.php';
 <?php 
    $_kode = $_POST['kode'];
    $_nama = $_POST['nama'];
-   $_harga = $_POST['harga_beli'];
+   $_harga_beli = $_POST['harga_beli'];
    $_stok = $_POST['stok'];
-   $_minstok = $_POST['min_stok'];
-   $_jenis = $_POST['jenis'];
+   $_min_stok = $_POST['min_stok'];
+   $_jenis_proses_id = $_POST['jenis_proses_id'];
 
-   $_proses = $_POST['proses'];
+   $_produk = $_POST['produk'];
 
    // array data
    $ar_data[]=$_kode; // ? 1
    $ar_data[]=$_nama; // ? 2
-   $ar_data[]=$_harga;// 3
-   $ar_data[]= 1.2 * $_harga;
+   $ar_data[]=$_harga_beli;// 3
    $ar_data[]=$_stok;
-   $ar_data[]=$_minstok;
-   $ar_data[]=$_jenis; // ? 7
+   $ar_data[]=$_min_stok;
+   $ar_data[]=$_jenis_produk_id; // ? 7
 
    if($_proses == "Simpan"){
     // data baru
